@@ -1,21 +1,88 @@
 /* MOBILE QUERY  */
-@media screen (max-width: 420px) {
+@media screen and (max-width: 420px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  /* HEADER */
+  .container-header {
+    height: 70px;
+    max-width: 425px;
+  }
   .contact {
     display: none;
   }
-  .list {
+  .list-header {
+    display: none;
+  }
+  /* SECTION 1 Effective Solution */
+  .title-section {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .title {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  /* SECTION 2 Our features  */
+  .icons-container {
+    display: none;
+  }
+  .features-container {
+    padding: 96px 0;
+    display: flex;
+    min-width: 428px;
+  }
+  .chapters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    flex-wrap: wrap;
+  }
+  .subtitles {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .subtitles-text {
+    color: var(--SLATE, #434455);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+  /* SECTION 3 What are we doing */
+  .images-container {
     display: none;
   }
 }
 
 /* TABLET QUERY */
-@media screen (min-width: 420px) and (max-width: 768px) {
-  /* HEADER */
+@media screen and (min-width: 420px) and (max-width: 768px) {
   .container {
     max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   .section {
     padding: 96px 0;
+  }
+  /* HEADER */
+  .header {
+    display: flex;
   }
   .contacts-list {
     display: flex;
@@ -28,5 +95,50 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.48px;
+  }
+  /* SECTION 1 Effective Solution */
+  .title {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+  }
+  /* SECTION 2 Our features  */
+  .icons-container {
+    display: none;
+  }
+  .subtitles {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .subtitles-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    width: 356px;
+  }
+  .chapters-list {
+    flex-direction: column;
+    width: 768px;
+    height: 372px;
+    flex-wrap: wrap;
+  }
+  .subtitle-item {
+    width: 0%;
+  }
+  /* SECTION 3 What are we doing */
+  .images-container {
+    display: none;
   }
 }
