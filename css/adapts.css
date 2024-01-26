@@ -1,0 +1,32 @@
+/* MOBILE QUERY  */
+@media screen (max-width: 420px) {
+  .contact {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+}
+
+/* TABLET QUERY */
+@media screen (min-width: 420px) and (max-width: 768px) {
+  /* HEADER */
+  .container {
+    max-width: 768px;
+  }
+  .section {
+    padding: 96px 0;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .contacts-address {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+  }
+}
