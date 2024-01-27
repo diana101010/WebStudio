@@ -423,6 +423,7 @@ ul {
 .jobs-position {
   display: flex;
   gap: 24px;
+  flex-wrap: nowrap;
 }
 .persons {
   padding: 32px 0;

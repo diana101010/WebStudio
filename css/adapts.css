@@ -15,7 +15,7 @@
   .list-header {
     display: none;
   }
-  /* SECTION 1 Effective Solution */
+  /* SECTION 1 Effective Solution MOBILE */
   .title-section {
     flex-wrap: wrap;
     display: flex;
@@ -30,7 +30,7 @@
     letter-spacing: 0.72px;
     text-transform: capitalize;
   }
-  /* SECTION 2 Our features  */
+  /* SECTION 2 Our features MOBILE  */
   .icons-container {
     display: none;
   }
@@ -64,9 +64,77 @@
     line-height: 24px;
     letter-spacing: 0.32px;
   }
-  /* SECTION 3 What are we doing */
+  /* SECTION 3 What are we doing  MOBILE*/
   .images-container {
     display: none;
+  }
+  /* SECTION 4 Our team MOBILE */
+  .chapters-color {
+    height: 2232px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 428px;
+    padding-left: 82px;
+  }
+  .jobs-position {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  /* SECTION 5 Customers MOBILE */
+  .customers-container {
+    padding: 96px 0;
+  }
+  .align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 420px;
+  }
+  .item-icons {
+    max-width: 100%;
+    width: 175px;
+    height: 88px;
+  }
+  /* FOOTER Mobile */
+  .footer-background {
+    padding: 96px 0;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    width: 428px;
+  }
+  .partial-footer {
+    margin-right: 80px;
+    text-align: center;
+    margin-left: 80px;
+  }
+  .social-media-footer {
+    align-items: center;
+  }
+  .title-social-media {
+    padding-top: 72px;
+  }
+  .form-footer-container {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 72px;
+  }
+  .form-footer {
+    flex-direction: column;
+  }
+  .subscribe-button {
+    max-width: 165px;
+    margin-left: 70px;
   }
 }
 
@@ -80,9 +148,13 @@
   .section {
     padding: 96px 0;
   }
-  /* HEADER */
+  /* HEADER  TABLET*/
   .header {
     display: flex;
+    height: 72px;
+  }
+  .header-buttons-active::after {
+    top: 20px;
   }
   .contacts-list {
     display: flex;
@@ -95,8 +167,9 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.48px;
+    padding: 0;
   }
-  /* SECTION 1 Effective Solution */
+  /* SECTION 1 Effective Solution  TABLET*/
   .title {
     text-align: center;
     font-family: Roboto;
@@ -106,7 +179,7 @@
     line-height: 60px;
     letter-spacing: 1.12px;
   }
-  /* SECTION 2 Our features  */
+  /* SECTION 2 Our features TABLET  */
   .icons-container {
     display: none;
   }
@@ -137,8 +210,52 @@
   .subtitle-item {
     width: 0%;
   }
-  /* SECTION 3 What are we doing */
+  /* SECTION 3 What are we doing TABLET*/
   .images-container {
     display: none;
+  }
+  /* SECTION 4 our team TABLET */
+  .chapters-color {
+    height: 1224px;
+  }
+  .jobs-position {
+    flex-wrap: wrap;
+    padding-left: 108px;
+  }
+  /* SECTION 5 Customers TABLET */
+  .customers-container {
+    padding: 96px 0px;
+    display: flex;
+  }
+  .customer-icons-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-icons {
+    max-width: 100%;
+    width: 168px;
+    height: 88px;
+  }
+  /* FOOTER TABLET */
+  .footer-background {
+    padding: 96px 0;
+    display: flex;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+    margin-left: 108px;
+  }
+  .partial-footer {
+    margin-right: 24px;
+  }
+  .form-footer-container {
+    margin-left: 0;
+    margin-top: 72px;
+  }
+  .form-footer {
+    gap: 0;
   }
 }
