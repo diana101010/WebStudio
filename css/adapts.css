@@ -202,6 +202,7 @@
     max-width: 428px;
   }
   .open-menu-button {
+    display: flex;
     cursor: pointer;
     gap: 56px;
   }
