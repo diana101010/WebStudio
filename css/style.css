@@ -915,3 +915,10 @@ input:checked + .privacy-policy-elem span:first-child {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
+/* MOBILE MENU */
+.menu-container {
+  display: none;
+}
+.open-menu-button {
+  display: none;
+}
