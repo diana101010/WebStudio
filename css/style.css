@@ -922,3 +922,384 @@ input:checked + .privacy-policy-elem span:first-child {
 .open-menu-button {
   display: none;
 }
+
+/* MOBILE QUERY  */
+@media screen and (max-width: 420px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  /* HEADER */
+  .container-header {
+    height: 70px;
+    max-width: 425px;
+  }
+  .contact {
+    display: none;
+  }
+  .list-header {
+    display: none;
+  }
+  /* SECTION 1 Effective Solution MOBILE */
+  .title-section {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .title {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  /* SECTION 2 Our features MOBILE  */
+  .icons-container {
+    display: none;
+  }
+  .features-container {
+    padding: 96px 0;
+    display: flex;
+    min-width: 428px;
+  }
+  .chapters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    flex-wrap: wrap;
+  }
+  .subtitles {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .subtitles-text {
+    color: var(--SLATE, #434455);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+  /* SECTION 3 What are we doing  MOBILE*/
+  .images-container {
+    display: none;
+  }
+  /* SECTION 4 Our team MOBILE */
+  .chapters-color {
+    height: 2232px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 428px;
+    padding-left: 82px;
+  }
+  .jobs-position {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  /* SECTION 5 Customers MOBILE */
+  .customers-container {
+    padding: 96px 0;
+  }
+  .align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 420px;
+  }
+  .item-icons {
+    max-width: 100%;
+    width: 175px;
+    height: 88px;
+  }
+  /* FOOTER Mobile */
+  .footer-background {
+    padding: 96px 0;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    width: 428px;
+  }
+  .partial-footer {
+    margin-right: 80px;
+    text-align: center;
+    margin-left: 80px;
+  }
+  .social-media-footer {
+    align-items: center;
+  }
+  .title-social-media {
+    padding-top: 72px;
+  }
+  .form-footer-container {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 72px;
+  }
+  .form-footer {
+    flex-direction: column;
+  }
+  .subscribe-button {
+    max-width: 165px;
+    margin-left: 70px;
+  }
+  /* MOBILE MENU */
+  .menu-container {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu-list {
+    margin: 80px 0px 284px 40px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mobile-menu-link {
+    color: #2e2f42;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: #404bbf;
+  }
+  .mobile-menu-list-address {
+    margin: 0px 0px 48px 40px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mobile-menu-phone {
+    color: #4d5ae5;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .mobile-menu-email {
+    color: #434455;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+  }
+  .mobile-menu-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+  }
+  .modal-background {
+    max-width: 428px;
+  }
+  .open-menu-button {
+    display: flex;
+    cursor: pointer;
+    gap: 56px;
+  }
+  .open-menu-container {
+    display: flex;
+    padding: 16px 0px;
+    align-items: center;
+    border: none;
+    background: white;
+  }
+  .close-menu-button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin-top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .close-menu-button:hover {
+    background-color: #404bbf;
+    border: none;
+    fill: #fff;
+  }
+  .close-menu-button:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #fff;
+  }
+}
+
+/* TABLET QUERY */
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .section {
+    padding: 96px 0;
+  }
+  /* HEADER  TABLET*/
+  .header {
+    display: flex;
+    height: 72px;
+  }
+  .header-buttons-active::after {
+    top: 20px;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .contacts-address {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    padding: 0;
+  }
+  .open-menu-button {
+    display: none;
+  }
+  /* SECTION 1 Effective Solution  TABLET*/
+  .title {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+  }
+  /* SECTION 2 Our features TABLET  */
+  .icons-container {
+    display: none;
+  }
+  .subtitles {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .subtitles-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    width: 356px;
+  }
+  .chapters-list {
+    flex-direction: column;
+    width: 768px;
+    height: 372px;
+    flex-wrap: wrap;
+  }
+  .subtitle-item {
+    width: 0%;
+  }
+  /* SECTION 3 What are we doing TABLET*/
+  .images-container {
+    display: none;
+  }
+  /* SECTION 4 our team TABLET */
+  .chapters-color {
+    height: 1224px;
+  }
+  .jobs-position {
+    flex-wrap: wrap;
+    padding-left: 108px;
+  }
+  /* SECTION 5 Customers TABLET */
+  .customers-container {
+    padding: 96px 0px;
+    display: flex;
+  }
+  .customer-icons-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-icons {
+    max-width: 100%;
+    width: 168px;
+    height: 88px;
+  }
+  /* FOOTER TABLET */
+  .footer-background {
+    padding: 96px 0;
+    display: flex;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+    margin-left: 108px;
+  }
+  .partial-footer {
+    margin-right: 24px;
+  }
+  .form-footer-container {
+    margin-left: 0;
+    margin-top: 72px;
+  }
+  .form-footer {
+    gap: 0;
+  }
+  /* MOBILE MENU  tablet*/
+  .menu-container {
+    display: none;
+  }
+  .open-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
