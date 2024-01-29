@@ -1073,13 +1073,13 @@ input:checked + .privacy-policy-elem span:first-child {
   .menu-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
     background-color: rgba(255, 255, 255, 1);
     z-index: 999;
 
@@ -1102,6 +1102,16 @@ input:checked + .privacy-policy-elem span:first-child {
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+  .menu-toggle:hover {
+    background-color: #2e2f42;
+    border: none;
+    fill: #fff;
+  }
+  .menu-toggle:focus {
+    background-color: #2e2f42;
+    border: none;
+    fill: #fff;
   }
   .mobile-menu-list {
     margin: 80px 0px 100px 40px;
@@ -1345,6 +1355,7 @@ input:checked + .privacy-policy-elem span:first-child {
   /* MOBILE MENU  tablet*/
   .menu-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
@@ -1352,7 +1363,6 @@ input:checked + .privacy-policy-elem span:first-child {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
     background-color: rgba(255, 255, 255, 1);
     z-index: 999;
 
