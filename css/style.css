@@ -1104,12 +1104,12 @@ input:checked + .privacy-policy-elem span:first-child {
     list-style: none;
   }
   .menu-toggle:hover {
-    background-color: #2e2f42;
+    background-color: #404bbf;
     border: none;
     fill: #fff;
   }
   .menu-toggle:focus {
-    background-color: #2e2f42;
+    background-color: #404bbf;
     border: none;
     fill: #fff;
   }
@@ -1183,6 +1183,16 @@ input:checked + .privacy-policy-elem span:first-child {
     border: none;
     border-radius: 50%;
     outline: none;
+  }
+  .menu-toggle:hover {
+    background-color: #404bbf;
+    border: none;
+    fill: #fff;
+  }
+  .menu-toggle:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #fff;
   }
   .close-menu-button {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1458,6 +1468,16 @@ input:checked + .privacy-policy-elem span:first-child {
     border: none;
     border-radius: 50%;
     outline: none;
+  }
+  .menu-toggle:hover {
+    background-color: #404bbf;
+    border: none;
+    fill: #fff;
+  }
+  .menu-toggle:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #fff;
   }
   .close-menu-button {
     border: 1px solid rgba(0, 0, 0, 0.1);
