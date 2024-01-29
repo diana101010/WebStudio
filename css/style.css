@@ -106,6 +106,8 @@ ul {
 }
 /* HEADER */
 .header {
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -151,6 +153,7 @@ ul {
 .logo-nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -162,6 +165,7 @@ ul {
   text-transform: uppercase;
   margin-right: 76px;
   text-decoration: none;
+  flex-wrap: nowrap;
 }
 
 .logo-part {
@@ -925,6 +929,9 @@ input:checked + .privacy-policy-elem span:first-child {
     padding: 0 15px;
   }
   /* HEADER */
+  .logo-nav {
+    flex-wrap: wrap;
+  }
   .container-header {
     height: 70px;
     max-width: 425px;
@@ -936,8 +943,9 @@ input:checked + .privacy-policy-elem span:first-child {
     display: none;
   }
   .logo-link {
+    margin-top: 10px;
     margin-right: 149px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     display: flex;
   }
   /* SECTION 1 Effective Solution MOBILE */
@@ -1063,20 +1071,37 @@ input:checked + .privacy-policy-elem span:first-child {
   }
   /* MOBILE MENU */
   .menu-container {
-    display: none;
-  }
-  .#open-button:checked + .menu-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
   }
+
   .menu-container.is-open {
     transform: translateX(0);
+  }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: rgba(46, 47, 66, 1);
+  }
+
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
   .mobile-menu-list {
     margin: 80px 0px 100px 40px;
@@ -1142,8 +1167,7 @@ input:checked + .privacy-policy-elem span:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -1191,7 +1215,13 @@ input:checked + .privacy-policy-elem span:first-child {
   /* HEADER  TABLET*/
   .header {
     display: flex;
+    justify-content: space-between;
     height: 72px;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .logo-nav {
+    flex-wrap: wrap;
   }
   .header-buttons-active::after {
     top: 20px;
@@ -1217,8 +1247,9 @@ input:checked + .privacy-policy-elem span:first-child {
     display: none;
   }
   .logo-link {
-    flex-wrap: wrap;
-    margin-right: 449px;
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    margin-right: 350px;
     display: flex;
   }
 
@@ -1312,23 +1343,40 @@ input:checked + .privacy-policy-elem span:first-child {
     gap: 0;
   }
   /* MOBILE MENU  tablet*/
-
   .menu-container {
-    display: none;
-  }
-  .#open-button:checked + .menu-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
   }
+
   .menu-container.is-open {
     transform: translateX(0);
   }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: rgba(46, 47, 66, 1);
+  }
+
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
   .mobile-menu-list {
     margin: 80px 0px 284px 40px;
     display: inline-flex;
@@ -1388,13 +1436,13 @@ input:checked + .privacy-policy-elem span:first-child {
     gap: 56px;
   }
   .menu-toggle {
+    flex-wrap: wrap;
+    margin-left: auto;
     min-height: 40px;
     min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
