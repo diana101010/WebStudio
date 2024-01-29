@@ -1063,6 +1063,9 @@ input:checked + .privacy-policy-elem span:first-child {
   }
   /* MOBILE MENU */
   .menu-container {
+    display: none;
+  }
+  .#open-button:checked + .menu-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1080,7 +1083,7 @@ input:checked + .privacy-policy-elem span:first-child {
     transform: translateX(0);
   }
   .mobile-menu-list {
-    margin: 80px 0px 284px 40px;
+    margin: 80px 0px 100px 40px;
     display: inline-flex;
     flex-direction: column;
     gap: 40px;
