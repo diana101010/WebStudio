@@ -26,10 +26,9 @@
     <header class="header">
       <div class="container-header container">
         <nav class="logo-nav">
-          <a href="./index.html" class="logo-link link">
+          <a href="./index.html" class="logo-footer link">
             Web<span class="logo-second-word">Studio</span></a
           >
-          <!-- open button -->
           <ul class="list list-header">
             <li>
               <a
@@ -60,9 +59,10 @@
             </li>
           </ul>
         </address>
-        <button class="open-menu-button">
+        <!-- button -->
+        <div class="ham-menu-div">
           <svg
-            class="menu-toggle js-open-menu"
+            class="ham-menu-svg js-open-menu"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="22"
@@ -578,8 +578,8 @@
       </div>
     </div>
     <!-- MOBILE MENU -->
-    <div class="menu-container is-open js-menu-container">
-      <button type="button" class="menu-toggle js-close-menu">
+     <div class="burger-menu-div is-open js-menu-container">
+      <button type="button" class="burger-menu-button js-close-menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="8"
@@ -601,57 +601,61 @@
         </svg>
       </button>
       <nav class="nav-burger-menu">
-        <ul class="list mobile-menu-list">
+        <ul class="list nav-burger-menu-ul">
           <li class="nav-burger-menu-li">
-            <a href="./index.html" class="link mobile-menu-link">Studio</a>
+            <a href="./index.html" class="link nav-burger-link">Studio</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="link mobile-menu-link"
+            <a href="./portfolio.html" class="link nav-burger-link"
               >Portfolio</a
             >
           </li>
-          <li><a href="" class="link mobile-menu-link">Contacts</a></li>
+          <li><a href="" class="link nav-burger-link">Contacts</a></li>
         </ul>
       </nav>
       <address class="burger-menu-address">
-        <ul class="list mobile-menu-list-address">
+        <ul class="list burger-menu-address-ul">
           <li>
-            <a href="tel:+110001111111" class="link mobile-menu-phone"
+            <a
+              href="tel:+110001111111"
+              class="link burger-menu-address-link-phone"
               >+11 (000) 111-11-11</a
             >
           </li>
           <li>
-            <a href="mailto:info@devstudio.com" class="link mobile-menu-email"
+            <a
+              href="mailto:info@devstudio.com"
+              class="link burger-menu-address-link-mail"
               >info@devstudio.com</a
             >
           </li>
         </ul>
       </address>
-      <ul class="list mobile-menu-social-media">
-        <li class="icon-item">
-          <a href="" class="icon-link">
-            <svg width="16" height="16" class="social-media-icons">
+      <ul class="list burger-menu-media-ul">
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="icon-item">
-          <a href="" class="icon-link">
-            <svg width="16" height="16" class="social-media-icons">
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="icon-item">
-          <a href="" class="icon-link">
-            <svg width="16" height="16" class="social-media-icons">
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="icon-item">
-          <a href="" class="icon-link">
-            <svg width="16" height="16" class="social-media-icons">
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
