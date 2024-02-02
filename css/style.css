@@ -1921,7 +1921,7 @@ input:checked + .modal-label-checkbox span:first-child {
     max-width: 428px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 769px) and (max-width: 1158px) {
   /* HEADER */
   .address-list {
     display: flex;
@@ -2089,7 +2089,6 @@ input:checked + .modal-label-checkbox span:first-child {
   .footer-container {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
   }
   .partial-footer {
     margin-right: 24px;
