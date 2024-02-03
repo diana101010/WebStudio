@@ -17,51 +17,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-querry.css"/>
     <title>Studio</title>
   </head>
   <body>
     <header class="header">
-      <div class="container container-header">
+      <div class="container-header container">
         <nav class="logo-nav">
-          <a href="./index.html" class="logo-link"
-            >Web<span class="logo-part">Studio</span></a
+          <a href="./index.html" class="logo-footer link">
+            Web<span class="logo-second-word">Studio</span></a
           >
-          <ul class="list">
+          <ul class="list list-header">
             <li>
               <a
-                class="header-buttons header-buttons-active"
                 href="./index.html"
+                class="header-buttons link header-buttons-active"
                 >Studio</a
               >
             </li>
             <li>
-              <a
-                class="header-buttons header-buttons-active"
-                href="./portfolio.html"
+              <a href="./portfolio.html" class="header-buttons link"
                 >Portfolio</a
               >
             </li>
-            <li>
-              <a class="header-buttons header-buttons-active" href=""
-                >Contacts</a
-              >
-            </li>
+            <li><a href="" class="header-buttons link">Contacts</a></li>
           </ul>
         </nav>
-        <address class="contact">
-          <ul class="list">
+        <address class="address">
+          <ul class="address-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="contacts-address"
+              <a href="mailto:info@devstudio.com" class="contacts-address link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="contacts-address"
+              <a href="tel:+110001111111" class="contacts-address link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!-- button -->
+        <div class="ham-menu-div">
+          <svg
+            class="ham-menu-svg js-open-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_297053_2156)">
+              <path
+                d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                stroke="#2E2F42"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_297053_2156">
+                <rect width="32" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- List of buttons -->
@@ -79,7 +100,7 @@
           </ul>
           <ul class="images-port">
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/bankapp.jpg"
@@ -94,13 +115,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Banking App Interface Concept</h2>
+                  <h2 class="name-teamcard-port">Banking App Interface Concept</h2>
                   <p class="functions-paragraphs">App</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/caslesspayment.jpg"
@@ -115,13 +136,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Cashless Payment</h2>
+                  <h2 class="name-teamcard-port">Cashless Payment</h2>
                   <p class="functions-paragraphs">Marketing</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/meditationapp.jpg"
@@ -136,13 +157,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Meditation App</h2>
+                  <h2 class="name-teamcard-port">Meditation App</h2>
                   <p class="functions-paragraphs">App</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/taxservice.jpg"
@@ -157,13 +178,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Taxi Service</h2>
+                  <h2 class="name-teamcard-port">Taxi Service</h2>
                   <p class="functions-paragraphs">Marketing</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/screenilustrations.jpg"
@@ -177,13 +198,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Screen Illustrations</h2>
+                  <h2 class="name-teamcard-port">Screen Illustrations</h2>
                   <p class="functions-paragraphs">Design</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/onlinrcourses.jpg"
@@ -198,13 +219,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Online Courses</h2>
+                  <h2 class="name-teamcard-port">Online Courses</h2>
                   <p class="functions-paragraphs">Marketing</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/instagramconcept.jpg"
@@ -219,13 +240,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Instagram Stories Concept</h2>
+                  <h2 class="name-teamcard-port">Instagram Stories Concept</h2>
                   <p class="functions-paragraphs">Design</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/organicfood.jpg"
@@ -240,13 +261,13 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Organic Food</h2>
+                  <h2 class="name-teamcard-port">Organic Food</h2>
                   <p class="functions-paragraphs">Web Site</p>
                 </div>
               </a>
             </li>
             <li class="item-image-port">
-              <a href="" class="link">
+              <a href="" class="link-port">
                 <div class="container-img">
                   <img
                     src="./images/freshcofee.jpg"
@@ -261,7 +282,7 @@
                   </p>
                 </div>
                 <div class="teamcard-details">
-                  <h2 class="name-teamcard">Fresh Coffee</h2>
+                  <h2 class="name-teamcard-port">Fresh Coffee</h2>
                   <p class="functions-paragraphs">Web Site</p>
                 </div>
               </a>
@@ -271,42 +292,42 @@
       </section>
     </main>
     <footer class="footer-background">
-      <div class="footer-container">
+      <div class="footer-container container">
         <div class="partial-footer">
-          <a class="logo-footer" href="./index.html"
-            >Web<span class="logo-light">Studio</span></a
+          <a href="./index.html" class="logo-footer link">
+            Web<span class="logo-light">Studio</span></a
           >
-          <p class="footer">
+          <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
         </div>
         <div class="social-media-footer">
           <p class="title-social-media">Social media</p>
-          <ul class="icons-list-footer">
+          <ul class="list icons-list-footer">
             <li class="icon-item">
-              <a class="icons-link-footer" href="">
+              <a href="" class="icons-link-footer">
                 <svg width="24" height="24" class="social-media-icons">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-item">
-              <a class="icons-link-footer" href="">
+              <a href="" class="icons-link-footer">
                 <svg width="24" height="24" class="social-media-icons">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-item">
-              <a class="icons-link-footer" href="">
+              <a href="" class="icons-link-footer">
                 <svg width="24" height="24" class="social-media-icons">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="icon-item">
-              <a class="icons-link-footer" href="">
+              <a href="" class="icons-link-footer">
                 <svg width="24" height="24" class="social-media-icons">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -314,10 +335,9 @@
             </li>
           </ul>
         </div>
-        <!-- FOOTER MINI FORM SUBSCRIBE -->
         <div class="form-footer-container">
           <p class="subscribe-elem">Subscribe</p>
-          <form action="novalidate" class="form-footer">
+          <form action="novalidate" class="footer-form">
             <label for="email_footer" class="form-elem"
               ><input
                 class="form-footer-email"
@@ -327,15 +347,101 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="subscribe-button" type="submit">
+            <button type="submit" class="subscribe-button">
               Subscribe
               <svg width="24" height="24" class="footer-icon">
-                <use href="./images/icons.svg#icon-Airplane"></use>
+                <use href="./images/symbols.svg#icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+     <div class="burger-menu-div is-open js-menu-container">
+      <button type="button" class="burger-menu-button js-close-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_628519_170)">
+            <path
+              d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+              fill="#2E2F42"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_628519_170">
+              <rect width="8" height="8" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <nav class="nav-burger-menu">
+        <ul class="list nav-burger-menu-ul">
+          <li class="nav-burger-menu-li">
+            <a href="./index.html" class="link nav-burger-link">Studio</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="link nav-burger-link"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="" class="link nav-burger-link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="burger-menu-address">
+        <ul class="list burger-menu-address-ul">
+          <li>
+            <a
+              href="tel:+110001111111"
+              class="link burger-menu-address-link-phone"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="link burger-menu-address-link-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="list burger-menu-media-ul">
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="section-three-list-svg">
+          <a href="" class="section-three-link-svg">
+            <svg width="16" height="16" class="section-three-svg">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
