@@ -32,6 +32,35 @@ h2 {
   margin: 0;
 }
 
+.paypal-form{
+  display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.paypal-btn{
+  background: linear-gradient(145deg, #009cde, #007bb5); /* PayPal blue gradient */
+    border: none;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.paypal-btn:hover {
+    background: linear-gradient(145deg, #007bb5, #009cde); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.paypal-btn:active {
+    transform: scale(1); /* Return to normal size on click */
+}
+
+.paypal-btn:focus {
+    outline: none; /* Remove focus outline */
+}
 .link {
   text-decoration: none;
   font-weight: 500;
